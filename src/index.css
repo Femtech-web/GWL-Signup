@@ -12,6 +12,7 @@ body {
   width: 100%;
   min-height: 100vh;
   color: #292828;
+  overflow-x: hidden;
 }
 
 img{
@@ -54,12 +55,13 @@ button p{
 
 .page_container {
   min-width: 390px;
-  min-height: 250px;
+  height: auto;
 }
 
 .inner_container{
-  min-height: 240px;
   max-height: 460px;
+  /* height: fit-content; */
+  /* height: auto; */
   max-width: 500px;
   border: 1px lightgray solid;
   border-radius: 1.5rem;
@@ -110,6 +112,11 @@ button p{
   font-size: 0.75rem;
 }
 
+ .bottom_container a {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
 .link{
   text-decoration: underline;
   text-decoration-color: gray;
@@ -124,11 +131,15 @@ button p{
   text-align:  center;
   font-size: 0.75rem;
   max-width: 370px;
-  padding: 2px 12px;
+  padding: 2px 8%;
 }
 
 @media screen and (max-width: 500px) {
   .inner_container{
     border: none;
+  }
+
+  .bottom_container{
+    transform: translateY(-50%);
   }
 }

@@ -84,19 +84,21 @@ function App() {
           </div>
         </div>
       </div>
-      {isRegister && (
-        <div className="agreement">
-          <p>
-            When you link your Facebook, Google, or Yahoo account, GWL collects
-            certain information stored in that account that you have configured
-            to make available. By linking your accounts, you authorize GWL to
-            access and use your account on the third party service in connection
-            with your use of GWL.com.
-          </p>
+      <div className="bottom_container">
+        {isRegister && (
+          <div className="agreement">
+            <p>
+              When you link your Facebook, Google, or Yahoo account, GWL
+              collects certain information stored in that account that you have
+              configured to make available. By linking your accounts, you
+              authorize GWL to access and use your account on the third party
+              service in connection with your use of GWL.com.
+            </p>
+          </div>
+        )}
+        <div className="login_switch">
+          <a className="link">Contact Us/Support</a>
         </div>
-      )}
-      <div className="login_switch">
-        <p className="link">Contact Us/Support</p>
       </div>
     </div>
   );
