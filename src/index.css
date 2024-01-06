@@ -1,0 +1,134 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  width: 100%;
+  min-height: 100vh;
+  color: #292828;
+}
+
+img{
+  width: 90px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  gap: 5px;
+  height: 40px;
+  width: 300px;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #292828;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px auto -webkit-focus-ring-color;
+}
+
+button p{
+  display: flex;
+  justify-content: center;
+  padding: 3px 0;
+  width: 100%;
+  font-weight: 800;
+  color: #202124;
+}
+
+.page_container {
+  min-width: 390px;
+  min-height: 250px;
+}
+
+.inner_container{
+  min-height: 240px;
+  max-height: 460px;
+  max-width: 500px;
+  border: 1px lightgray solid;
+  border-radius: 1.5rem;
+  padding: 2rem 0;
+}
+
+.header_contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px lightgray solid;
+}
+
+.tab_switch_cont{
+  display: flex;
+  gap: 1rem;
+}
+
+.tab_switch_cont > div {
+  display: flex;
+  color: gray;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.tab_switch_cont > div:hover{
+  color: #202124;
+}
+
+.switch{
+  height: 3px;
+  width: 100%;
+  background: #292828;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.btns_container{
+  display: flex;
+  flex-direction: column;
+  padding: 10% 8%;
+  padding-left: 12%;
+  gap: 1rem;
+}
+
+.login_switch{
+  text-align:  center;
+  font-size: 0.75rem;
+}
+
+.link{
+  text-decoration: underline;
+  text-decoration-color: gray;
+  cursor: pointer;
+}
+
+.link:hover{
+  text-decoration-color: #202124;
+}
+
+.agreement{
+  text-align:  center;
+  font-size: 0.75rem;
+  max-width: 370px;
+  padding: 2px 12px;
+}
+
+@media screen and (max-width: 500px) {
+  .inner_container{
+    border: none;
+  }
+}
