@@ -56,6 +56,7 @@ button p{
 .page_container {
   min-width: 390px;
   height: auto;
+  overflow-x: hidden;
 }
 
 .inner_container{
