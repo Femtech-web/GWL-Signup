@@ -60,8 +60,6 @@ button p{
 
 .inner_container{
   max-height: 460px;
-  /* height: fit-content; */
-  /* height: auto; */
   max-width: 500px;
   border: 1px lightgray solid;
   border-radius: 1.5rem;
