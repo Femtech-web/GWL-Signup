@@ -141,4 +141,8 @@ button p{
   .bottom_container{
     transform: translateY(-50%);
   }
+
+  .btns_container{
+    padding-left: 8%;
+  }
 }
